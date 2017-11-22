@@ -29,9 +29,9 @@ void insertion_sort(TYPE* arr,int size,Comparator cmp){
             }
         }
     }
-    for(i=0;i<=size-1;i++){
+    /*for(i=0;i<=size-1;i++){
         printf("%d ",arr[i]);
-    }
+    }  */
 }
 void bubble_sort(TYPE* arr,int size,Comparator cmp){
     int i,j;
@@ -44,9 +44,9 @@ void bubble_sort(TYPE* arr,int size,Comparator cmp){
             }
         }
     }
-    for(i=1;i<=size;i++){
+    /*for(i=1;i<=size;i++){
         printf("%d ",arr[i-1]);
-    }
+    }  */
 }
 /*void merge_sort(TYPE* arr,int size,Comparator cmp){                   //i dont know how to use cmp there
     int first=0;
@@ -164,8 +164,21 @@ int main(){
     int arr[5]={4,7,1,3,0};
     Comparator cmp;
     cmp=sort;
-    for(int i=0;i<=sizeof(arr)-1;i++){
+    insertion_sort(arr,5,cmp);
+    for(int i=0;i<=4;i++){
         printf("%d ",arr[i]);
-    }
+    }putchar('\n');
+    bubble_sort(arr,5,cmp);
+    for(int i=0;i<=4;i++){
+        printf("%d ",arr[i]);
+    }printf("\n");
+    merge_sort(arr,0,4);
+    for(int i=0;i<=4;i++){
+        printf("%d ",arr[i]);
+    }printf("\n");
+    quickSort(arr,0,4);
+    for(int i=0;i<=4;i++){
+        printf("%d ",arr[i]);
+    }printf("\n");
     return 0;
 }
