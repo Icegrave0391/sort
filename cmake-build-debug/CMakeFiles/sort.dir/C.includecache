@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/84968/CLionProjects/sort/main.c
+stdio.h
+-
+sort_function.h
+C:/Users/84968/CLionProjects/sort/sort_function.h
+stdlib.h
+-
+
+C:/Users/84968/CLionProjects/sort/sort_function.c
+
+C:/Users/84968/CLionProjects/sort/sort_function.h
+
